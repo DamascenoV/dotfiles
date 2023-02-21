@@ -185,19 +185,19 @@ bindsym $mod+r mode "resize"
 #mode hide
 bar {
         status_command i3status
+        position top
         output primary
         tray_output none
         separator_symbol “⁞”
 }
 
 ###### CUSTOM SETTINGS ######
-gaps inner 10px
-gaps outer 5px
-smart_gaps on
 
+# BASIC SETTINGS
+default_border pixel 1
 exec_always feh --bg-center $HOME/Downloads/image.png
 
-# # Sreen brightness controls
+# Sreen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1 # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1 # decrease screen brightness
 
